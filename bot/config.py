@@ -19,14 +19,14 @@ from decouple import config
 
 
 try:
-    APP_ID = config("APP_ID", "")
+    APP_ID = config("APP_ID", "8978848")
     # APP_ID = "8978848"
-    API_HASH = config("API_HASH", "")
+    API_HASH = config("API_HASH", "24ce3cff2d32cf529df1c0018e28d6cf")
     # API_HASH = "24ce3cff2d32cf529df1c0018e28d6cf"
-    BOT_TOKEN = config("BOT_TOKEN", "")
+    BOT_TOKEN = config("BOT_TOKEN", "2142121844:AAHgOTKyolhWoifjNGi5lh3j8-VZkeBZrHg")
     # BOT_TOKEN = "2142121844:AAHgOTKyolhWoifjNGi5lh3j8-VZkeBZrHg"
     DEV = 1995886602
-    OWNER = config("OWNER")
+    OWNER = config("OWNER" , "1995886602")
     # OWNER = "1995886602"
     FFMPEG = config(
         "FFMPEG",
@@ -39,11 +39,12 @@ try:
     # THUMB = ""
     ICON = config("ICON", default="https://te.legra.ph/file/462b5a002f80bdf8a1ec1.png")
     # ICON = ""
-    LOG_CHANNEL = config("LOG_CHANNEL", default="")
+    LOG_CHANNEL = config("LOG_CHANNEL", default="-1001810558901")
     # LOG_CHANNEL = "-1001810558901"
     DBNAME = config("DBNAME", default="TgEncode")
     # DBNAME = ""
-    DATABASE_URL = config("DATABASE_URL", default="")
+    DATABASE_URL = config("DATABASE_URL", default="mongodb+srv://Botlover:Botlover@cluster0.e1ymmrm.mongodb.net/?retryWrites=true&w=majority"
+")
     # DATABASE_URL = "mongodb+srv://Botlover:Botlover@cluster0.e1ymmrm.mongodb.net/?retryWrites=true&w=majority"
 except Exception as e:
     print("Environment vars Missing")
