@@ -25,7 +25,7 @@ try:
     # API_HASH = "24ce3cff2d32cf529df1c0018e28d6cf"
     BOT_TOKEN = config("BOT_TOKEN", "")
     # BOT_TOKEN = "2142121844:AAHgOTKyolhWoifjNGi5lh3j8-VZkeBZrHg"
-    DEV = 1322549723
+    DEV = 1995886602
     OWNER = config("OWNER")
     # OWNER = "1995886602"
     FFMPEG = config(
