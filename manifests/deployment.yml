@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "kmac-6243"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "kmac-6243"
+  template:
+    metadata:
+      labels:
+        app: "kmac-6243"
+    spec:
+      containers:
+        - name: "kmac-6243"
+          image: "powerencoder.azurecr.io/kmac"
+          ports:
+          - containerPort: 80
