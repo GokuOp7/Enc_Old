@@ -399,9 +399,9 @@ async def custcap(name, fname):
             caption += " "
         if "1080" in nani:
             caption += "` [720p] [HEVC]`"
-        caption += "@Anime_Stein"
+        caption += " `@Anime_Stein.mkv`"
     except Exception:
         om = fname.split(".")[0]
         ot = om.split("@")[0]
-        caption = f"`{ot}`@Anime_stein"
+        caption = f"`{ot}` `@Anime_stein.mkv`"
     return caption
