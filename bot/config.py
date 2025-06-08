@@ -19,35 +19,27 @@ from decouple import config
 
 
 try:
-    APP_ID = config("APP_ID", "8978848")
-    # APP_ID = "8978848"
-    API_HASH = config("API_HASH", "24ce3cff2d32cf529df1c0018e28d6cf")
-    # API_HASH = "24ce3cff2d32cf529df1c0018e28d6cf"
-    BOT_TOKEN = config("BOT_TOKEN", "2142121844:AAHgOTKyolhWoifjNGi5lh3j8-VZkeBZrHg")
-    # BOT_TOKEN = "2142121844:AAHgOTKyolhWoifjNGi5lh3j8-VZkeBZrHg"
-    DEV = 1995886602
-    OWNER = config("OWNER", "1995886602")
-    # OWNER = "1995886602"
-    FFMPEG = config(
-        "FFMPEG",
-        default='ffmpeg -i "{}" -preset superfast -c:v libx265 -crf 28 -map 0:v -c:a aac -map 0:a -c:s copy -map 0:s? "{}"',
-    )
-    # FFMPEG = ""
-    THUMB = config(
-        "THUMBNAIL", default="https://telegra.ph/file/ab23f5209aae9cae3ba3c.jpg"
-    )
+    APP_ID = config("APP_ID", "4018758")
+    # APP_ID = ""
+    API_HASH = config("API_HASH", "622bba3cf046315531f71f9d97fa6c2a")
+    # API_HASH = ""
+    BOT_TOKEN = config("BOT_TOKEN", "6200331513:AAEGrlqEg9jiZDkoetp9FnBj_Q61tVSAaG8")
+    # BOT_TOKEN = ""
+    DEV = 5385471287
+    OWNER = config("OWNER", "5385471287")
+    # OWNER = ""
+    FFMPEG = config("FFMPEG", "ffmpeg -i '''{}''' -c:v libx265 -crf 28 -c:s copy? -s 854x480 -preset veryfast -ab 35k '''{}''' -y")
+    #FFMPEG = 
+    THUMB = config("THUMBNAIL", "https://telegra.ph/file/ab23f5209aae9cae3bac.jpg")
     # THUMB = ""
-    ICON = config("ICON", default="https://te.legra.ph/file/462b5a002f80bdf8a1ec1.png")
+    ICON = config("ICON", "https://te.legra.ph/file/462b5a002f80bdf8a1ec1.png")
     # ICON = ""
-    LOG_CHANNEL = config("LOG_CHANNEL", default="-1001810558901")
-    # LOG_CHANNEL = "-1001810558901"
-    DBNAME = config("DBNAME", default="TgEncode")
+    LOG_CHANNEL = config("LOG_CHANNEL", "-1001533601450")
+    # LOG_CHANNEL = ""
+    DBNAME = config("DBNAME", "TgEncode")
     # DBNAME = ""
-    DATABASE_URL = config(
-        "DATABASE_URL",
-        default="mongodb+srv://Botlover:Botlover@cluster0.e1ymmrm.mongodb.net/?retryWrites=true&w=majority",
-    )
-    # DATABASE_URL = "mongodb+srv://Botlover:Botlover@cluster0.e1ymmrm.mongodb.net/?retryWrites=true&w=majority"
+    DATABASE_URL = config("DATABASE_URL", "mongodb+srv://Nikhil:lol@cluster0.opa09.mongodb.net/?retryWrites=true&w=majority")
+    # DATABASE_URL = ""
 except Exception as e:
     print("Environment vars Missing")
     print("something went wrong")
