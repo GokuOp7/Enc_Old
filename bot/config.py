@@ -30,7 +30,7 @@ try:
     # OWNER = ""
     FFMPEG = config("FFMPEG", "ffmpeg -i '''{}''' -c:v libx265 -crf 28 -c:s copy? -s 854x480 -preset veryfast -ab 35k '''{}''' -y")
     #FFMPEG = 
-    THUMB = config("THUMBNAIL", "https://graph.org/file/75ee20ec8d8c8bba84f02.jpg")
+    THUMB = config("THUMBNAIL", "https://envs.sh/aRo.jpg")
     # THUMB = ""
     ICON = config("ICON", "https://te.legra.ph/file/462b5a002f80bdf8a1ec1.png")
     # ICON = ""
