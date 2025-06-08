@@ -383,31 +383,25 @@ async def custcap(name, fname):
         except Exception:
             g = ""
         oi = string.capwords(oi)
-        caption = f"**S-** `{y}`\n"
+        caption = f"`S-{y}`"
         if z:
-            caption += f"** E-** `{z}`"
-        if VERSION2:
-            caption += " (v2)"
-        if VERSION2 and WORKING:
-            caption += f"\n**◉ (V2) Reason:** `{VERSION2[0]}`"
-        if z:
-            caption += "\n"
+            caption += f"` E-{z}`"
         if y:
-            caption += f"**◉ Season:** `{y}`\n"
+            caption += f"` {oi}`"
+        if z:
+            caption += ""
         if fil3:
             fil3 = fil3.format(**locals())
-            caption += f"**◉ Type:** `{fil3}`"
+            caption += f"` [{fil3}]`"
         if z == g:
-            caption += " **[END]**\n"
+            caption += "` [END]`"
         else:
-            caption += "\n"
-        if st:
-            caption += f"**◉ Episode Title:** `{st}`\n"
+            caption += " "
         if "1080" in nani:
-            caption += "**◉ 🌟:** `[720p] [HEVC]`\n"
-        caption += "**🔗 @Anime_Stein'**"
+            caption += "` [720p] [HEVC]`"
+        caption += "@Anime_Stein"
     except Exception:
         om = fname.split(".")[0]
         ot = om.split("@")[0]
-        caption = f"**{ot}**\n**🔗 @Anime_stein**"
+        caption = f"`{ot}`@Anime_stein"
     return caption
