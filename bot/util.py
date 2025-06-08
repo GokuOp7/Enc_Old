@@ -383,9 +383,9 @@ async def custcap(name, fname):
         except Exception:
             g = ""
         oi = string.capwords(oi)
-        caption = f"**◉ Title:** `{oi}`\n"
+        caption = f"**S-** `{y}`\n"
         if z:
-            caption += f"**◉ Episode:** `{z}`"
+            caption += f"** E-** `{z}`"
         if VERSION2:
             caption += " (v2)"
         if VERSION2 and WORKING:
