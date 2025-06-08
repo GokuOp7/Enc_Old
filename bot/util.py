@@ -285,7 +285,7 @@ async def parse(name, kk, aa):
             bb += ".mkv"
     except Exception as er:
         LOGS.info(er)
-        bb = kk.replace(f".{aa}", " @Ani_Mine.mkv")
+        bb = kk.replace(f".{aa}", " @Anime_Stein.mkv")
         bb2 = bb
     return bb, bb2
 
@@ -404,10 +404,10 @@ async def custcap(name, fname):
         if st:
             caption += f"**◉ Episode Title:** `{st}`\n"
         if "1080" in nani:
-            caption += "**◉ 🌟:** `[1080p] [AV1]`\n"
-        caption += "**🔗 @ANi_MiNE**"
+            caption += "**◉ 🌟:** `[720p] [HEVC]`\n"
+        caption += "**🔗 @Anime_Stein'**"
     except Exception:
         om = fname.split(".")[0]
         ot = om.split("@")[0]
-        caption = f"**{ot}**\n**🔗 @Ani_Mine**"
+        caption = f"**{ot}**\n**🔗 @Anime_stein**"
     return caption
